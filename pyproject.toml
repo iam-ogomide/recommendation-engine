@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fico-snapshot"
+version = "0.1.0"
+description = "Create JSON snapshots of FICO data retrieved from MongoDB by BVN."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pymongo>=4.6,<5",
+    "python-dotenv>=1.0,<2",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8,<9",
+]
+
+[project.scripts]
+fico-snapshot = "fico_snapshot.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["fico_snapshot*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

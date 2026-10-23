@@ -1,0 +1,548 @@
+{
+  _id: ObjectId('62338d01fc9ea8368baecfef'),
+  bvn: '22231186083',
+  customerId: '61b8c9a1279ad423355c3e0b',
+  businessId: '6231a0f61068e1001aff6719',
+  name: 'Lionel Okeoghene Orishane',
+  phone: '08030800687',
+  gender: 'Male',
+  dateOfBirth: '1986-02-01',
+  address: '10 Aboh Avenue Zone 1 New',
+  email: null,
+  fico: {
+    score: [
+      {
+        source: 'CRC',
+        data: {
+          score: NumberInt('558'),
+          smartScores: null,
+          rating: 'AVERAGE',
+          reasons: [
+            'There is serious delinquency on the accounts, adverse record or collection filed on the credit report.',
+            'The length of time accounts have been established on the credit report is short relative to the other applicants scored.',
+            'Number of accounts with delinquency on the credit report is high relative to the other applicants scored.',
+            'Time since delinquency on the credit report is too long relative to the other applicants scored.'
+          ]
+        }
+      },
+      {
+        source: 'FIRST_CENTRAL',
+        data: {
+          score: null,
+          smartScores: null,
+          rating: 'HIGH RISK',
+          reasons: null
+        }
+      }
+    ],
+    lastUpdatedAt: ISODate('2022-05-17T10:17:43.281Z')
+  },
+  classic: {
+    score: {
+      ficoScores: [
+        {
+          source: 'CRC',
+          score: NumberInt('558')
+        },
+        {
+          source: 'FIRST_CENTRAL',
+          score: NumberInt('594')
+        }
+      ],
+      totalNoOfLoans: [
+        {
+          source: 'CRC',
+          value: NumberInt('2')
+        },
+        {
+          source: 'FIRST_CENTRAL',
+          value: NumberInt('1')
+        }
+      ],
+      NPL: [
+        {
+          source: 'CRC',
+          value: NumberInt('1')
+        },
+        {
+          source: 'FIRST_CENTRAL',
+          value: NumberInt('0')
+        }
+      ],
+      totalNoOfActiveLoans: [
+        {
+          source: 'CRC',
+          value: NumberInt('2')
+        },
+        {
+          source: 'FIRST_CENTRAL',
+          value: NumberInt('1')
+        }
+      ],
+      numberOfClosedLoans: [
+        {
+          source: 'CRC',
+          value: NumberInt('0')
+        },
+        {
+          source: 'FIRST_CENTRAL',
+          value: NumberInt('0')
+        }
+      ],
+      totalBorrowed: [
+        {
+          source: 'CRC',
+          value: NumberInt('41787500')
+        },
+        {
+          source: 'FIRST_CENTRAL',
+          value: NumberInt('41387500')
+        }
+      ],
+      highestLoanAmount: [
+        {
+          source: 'CRC',
+          value: NumberInt('41387500')
+        },
+        {
+          source: 'FIRST_CENTRAL',
+          value: NumberInt('41387500')
+        }
+      ],
+      lastLoanAmount: [
+        {
+          source: 'CRC',
+          value: NumberInt('41387500')
+        },
+        {
+          source: 'FIRST_CENTRAL',
+          value: NumberInt('41387500')
+        }
+      ],
+      totalOutstandingBalance: [
+        {
+          source: 'CRC',
+          value: NumberInt('36488595')
+        },
+        {
+          source: 'FIRST_CENTRAL',
+          value: Double('35935154.7')
+        }
+      ],
+      totalOverdue: [
+        {
+          source: 'CRC',
+          value: NumberInt('257814')
+        },
+        {
+          source: 'FIRST_CENTRAL',
+          value: Double('65987.98')
+        }
+      ]
+    },
+    lastUpdatedAt: ISODate('2022-03-17T19:33:22.533Z')
+  },
+  standard: {
+    lastUpdatedAt: ISODate('2022-03-17T08:59:57.917Z')
+  },
+  advanced: {
+    score: {
+      score: {
+        ficoScores: [
+          {
+            source: 'CRC',
+            score: NumberInt('558'),
+            reasons: [
+              'There is serious delinquency on the accounts, adverse record or collection filed on the credit report.',
+              'The length of time accounts have been established on the credit report is short relative to the other applicants scored.',
+              'Number of accounts with delinquency on the credit report is high relative to the other applicants scored.',
+              'Time since delinquency on the credit report is too long relative to the other applicants scored.'
+            ]
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            score: null,
+            reasons: null
+          }
+        ],
+        totalNoOfLoans: [
+          {
+            source: 'CRC',
+            value: NumberInt('2')
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            value: NumberInt('0')
+          }
+        ],
+        NPL: [
+          {
+            source: 'CRC',
+            value: NumberInt('1')
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            value: NumberInt('0')
+          }
+        ],
+        totalNoOfActiveLoans: [
+          {
+            source: 'CRC',
+            value: NumberInt('2')
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            value: NumberInt('0')
+          }
+        ],
+        numberOfClosedLoans: [
+          {
+            source: 'CRC',
+            value: NumberInt('0')
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            value: NumberInt('0')
+          }
+        ],
+        totalBorrowed: [
+          {
+            source: 'CRC',
+            value: NumberInt('41787500')
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            value: NumberInt('0')
+          }
+        ],
+        highestLoanAmount: [
+          {
+            source: 'CRC',
+            value: NumberInt('41387500')
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            value: Double('-Infinity')
+          }
+        ],
+        lastLoanAmount: [
+          {
+            source: 'CRC',
+            value: NumberInt('41387500')
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            value: null
+          }
+        ],
+        totalOutstandingBalance: [
+          {
+            source: 'CRC',
+            value: NumberInt('36488595')
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            value: NumberInt('0')
+          }
+        ],
+        totalOverdue: [
+          {
+            source: 'CRC',
+            value: NumberInt('257814')
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            value: NumberInt('0')
+          }
+        ],
+        fullyPaidOpenLoans: [
+          {
+            source: 'CRC',
+            value: NumberInt('0')
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            value: NumberInt('0')
+          }
+        ],
+        loanAccounts: [
+          {
+            source: 'CRC',
+            accounts: [
+              {
+                accountNo: '099IMGL202620001',
+                institutionName: 'ACCESS BANK PLC',
+                creditType: 'Mortage Loan for Commercial Banks',
+                currency: 'NGN',
+                date: '2020-09-15T23:00:00.000Z',
+                maturityDate: '2030-09-27T23:00:00.000Z',
+                loanAmount: NumberInt('41387500'),
+                installmentAmount: NumberInt('0'),
+                lastPaymentDate: null,
+                outstandingBalance: NumberInt('35935155'),
+                overdueAmount: NumberInt('65988'),
+                status: 'OPEN',
+                performanceStatus: 'Performing',
+                dateReported: '2022-01-31T16:52:41.000Z',
+                lastUpdated: null,
+                delinquencyStatus: null,
+                paymentHistory: [
+                  {
+                    month: '2022-01',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-12',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-11',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-10',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-09',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-08',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-07',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-05',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-03',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-02',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-01',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-12',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-11',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-10',
+                    overdueDays: NumberInt('0')
+                  }
+                ]
+              },
+              {
+                accountNo: '484161',
+                institutionName: 'UNITED BANK FOR AFRICA',
+                creditType: 'Revenue Loan for Others from Commercial Banks',
+                currency: 'NGN',
+                date: '2009-09-09T23:00:00.000Z',
+                maturityDate: '2012-09-23T23:00:00.000Z',
+                loanAmount: NumberInt('400000'),
+                installmentAmount: NumberInt('0'),
+                lastPaymentDate: null,
+                outstandingBalance: NumberInt('553440'),
+                overdueAmount: NumberInt('191826'),
+                status: 'OPEN',
+                performanceStatus: 'Lost',
+                dateReported: '2022-02-28T09:00:46.000Z',
+                lastUpdated: null,
+                delinquencyStatus: null,
+                paymentHistory: [
+                  {
+                    month: '2022-02',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2022-01',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-12',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-09',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-07',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-06',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-05',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-03',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-02',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-01',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-12',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-11',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-10',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-09',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-08',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-07',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-06',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-05',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-03',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-02',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-01',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-12',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-09',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-08',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-07',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-06',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-05',
+                    overdueDays: NumberInt('0')
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            accounts: []
+          }
+        ]
+      },
+      creditEnquiries: [
+        {
+          source: 'CRC',
+          enquiries: [
+            {
+              institutionName: 'Carbon Finance And Investment Limited',
+              date: '2022-01-13T00:00:00.000Z'
+            },
+            {
+              institutionName: 'Carbon Finance And Investment Limited',
+              date: '2022-01-13T00:00:00.000Z'
+            },
+            {
+              institutionName: 'United Bank For Africa',
+              date: '2021-12-15T00:00:00.000Z'
+            },
+            {
+              institutionName: 'United Bank For Africa',
+              date: '2021-12-14T00:00:00.000Z'
+            }
+          ]
+        },
+        {
+          source: 'FIRST_CENTRAL',
+          enquiries: []
+        }
+      ],
+      name: 'Lionel Okeoghene Orishane'
+    },
+    lastUpdatedAt: ISODate('2022-05-08T16:13:31.691Z')
+  },
+  createdAt: ISODate('2022-03-17T19:33:21.916Z'),
+  updatedAt: ISODate('2023-05-31T04:51:59.995Z'),
+  __v: NumberInt('0'),
+  searchedDate: ISODate('2022-05-30T13:43:26.359Z'),
+  appId: ObjectId('6250ae886708d9001229049c'),
+  crc: {
+    lastUpdatedAt: ISODate('2023-05-31T04:51:59.986Z'),
+    score: {}
+  },
+  crcNano: {
+    lastUpdatedAt: ISODate('2023-05-31T04:51:59.987Z'),
+    score: {}
+  },
+  creditRegistry: {
+    lastUpdatedAt: ISODate('2023-05-31T04:51:59.986Z'),
+    score: {}
+  },
+  creditSummary: {
+    lastUpdatedAt: ISODate('2023-05-31T04:51:59.987Z'),
+    score: {}
+  },
+  firstCentral: {
+    lastUpdatedAt: ISODate('2023-05-31T04:51:59.986Z'),
+    score: {}
+  },
+  firstCentralNano: {
+    lastUpdatedAt: ISODate('2023-05-31T04:51:59.987Z'),
+    score: {}
+  },
+  premium: {
+    lastUpdatedAt: ISODate('2023-05-31T04:51:59.987Z'),
+    score: {}
+  }
+}

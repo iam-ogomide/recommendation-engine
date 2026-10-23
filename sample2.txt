@@ -1,0 +1,1846 @@
+{
+  _id: ObjectId('623b3752fc9ea8368baed0df'),
+  bvn: '22150827368',
+  customerId: '61c03b4c68abb202f6861fc1',
+  businessId: '6231a0f61068e1001aff6719',
+  name: 'Kingsley Ibe Onyedinma',
+  phone: '07033885828',
+  gender: 'Male',
+  dateOfBirth: '1988-05-12',
+  address: 'NO 10 GOSPEL RD IYANA ISASHI LAGOS',
+  email: '',
+  fico: {
+    score: [
+      {
+        source: 'CRC',
+        data: {
+          score: NumberInt('684'),
+          smartScores: null,
+          rating: 'GOOD',
+          reasons: [
+            'The length of time accounts have been established on the credit report is short relative to the other applicants scored.',
+            'Applicant is young relative to the other applicants scored.',
+            'Lack of recent revolving/charge account information on the credit report.',
+            'Time since most recent account opening on the credit report is too short relative to the other applicants scored.'
+          ]
+        }
+      },
+      {
+        source: 'FIRST_CENTRAL',
+        data: {
+          score: NumberInt('657'),
+          smartScores: null,
+          rating: 'FAIR RISK',
+          reasons: null
+        }
+      }
+    ],
+    lastUpdatedAt: ISODate('2022-05-10T09:08:32.203Z')
+  },
+  classic: {
+    score: {
+      ficoScores: [
+        {
+          source: 'CRC',
+          score: NumberInt('684')
+        },
+        {
+          source: 'FIRST_CENTRAL',
+          score: NumberInt('657')
+        }
+      ],
+      totalNoOfLoans: NumberInt('15'),
+      NPL: NumberInt('0'),
+      totalNoOfActiveLoans: NumberInt('5'),
+      numberOfClosedLoans: NumberInt('10'),
+      totalBorrowed: NumberInt('6789385'),
+      highestLoanAmount: NumberInt('1060000'),
+      lastLoanAmount: NumberInt('1000000'),
+      totalOutstandingBalance: Double('1217105.12'),
+      totalOverdue: Double('200943.11'),
+      fullyPaidOpenLoans: NumberInt('2')
+    },
+    lastUpdatedAt: ISODate('2022-05-08T14:34:35.030Z')
+  },
+  standard: {
+    score: {
+      ficoScores: [
+        {
+          source: 'CRC',
+          score: NumberInt('684'),
+          reasons: [
+            'The length of time accounts have been established on the credit report is short relative to the other applicants scored.',
+            'Applicant is young relative to the other applicants scored.',
+            'Lack of recent revolving/charge account information on the credit report.',
+            'Time since most recent account opening on the credit report is too short relative to the other applicants scored.'
+          ]
+        },
+        {
+          source: 'FIRST_CENTRAL',
+          score: NumberInt('657'),
+          reasons: null
+        }
+      ],
+      totalNoOfLoans: NumberInt('15'),
+      NPL: NumberInt('0'),
+      totalNoOfActiveLoans: NumberInt('5'),
+      numberOfClosedLoans: NumberInt('10'),
+      totalBorrowed: NumberInt('6789385'),
+      highestLoanAmount: NumberInt('1060000'),
+      lastLoanAmount: NumberInt('1000000'),
+      totalOutstandingBalance: Double('1217105.12'),
+      totalOverdue: Double('200943.11'),
+      fullyPaidOpenLoans: NumberInt('2'),
+      loanAccounts: [
+        {
+          accountNo: 'PM200900186132940',
+          institutionName: 'PAGE INTERNATIONAL FINANCIAL SERVICES LIMITED',
+          creditType: 'Term Loan for Financial / Operating leasing Companies',
+          currency: 'NGN',
+          date: '2021-10-19T23:00:00.000Z',
+          maturityDate: '2022-10-25T23:00:00.000Z',
+          loanAmount: NumberInt('1000000'),
+          installmentAmount: NumberInt('0'),
+          lastPaymentDate: null,
+          outstandingBalance: NumberInt('653618'),
+          overdueAmount: NumberInt('0'),
+          status: 'OPEN',
+          performanceStatus: 'Performing',
+          dateReported: '2022-03-31T09:42:43.000Z',
+          lastUpdated: null,
+          delinquencyStatus: null,
+          paymentHistory: [
+            {
+              month: '2022-03',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2022-02',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2021-12',
+              overdueDays: NumberInt('0')
+            }
+          ]
+        },
+        {
+          accountNo: null,
+          institutionName: 'MYCREDIT INVESTMENTS LIMITED',
+          creditType: null,
+          currency: null,
+          date: '2021-06-03T23:00:00.000Z',
+          maturityDate: '2021-07-04T23:00:00.000Z',
+          loanAmount: NumberInt('30000'),
+          installmentAmount: NumberInt('34800'),
+          lastPaymentDate: null,
+          outstandingBalance: NumberInt('0'),
+          overdueAmount: NumberInt('0'),
+          status: 'OPEN',
+          performanceStatus: 'Performing',
+          dateReported: '1970-01-01T00:00:00.000Z',
+          lastUpdated: null,
+          delinquencyStatus: null,
+          paymentHistory: []
+        },
+        {
+          accountNo: '042404635400010059000',
+          institutionName: 'GT BANK',
+          creditType: 'Overdraft for Commercial Banks',
+          currency: 'NGN',
+          date: '2020-11-25T23:00:00.000Z',
+          maturityDate: '2020-12-21T23:00:00.000Z',
+          loanAmount: NumberInt('0'),
+          installmentAmount: NumberInt('0'),
+          lastPaymentDate: null,
+          outstandingBalance: NumberInt('0'),
+          overdueAmount: NumberInt('0'),
+          status: 'OPEN',
+          performanceStatus: 'Performing',
+          dateReported: '2021-01-30T23:00:01.000Z',
+          lastUpdated: null,
+          delinquencyStatus: null,
+          paymentHistory: [
+            {
+              month: '2021-01',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2020-12',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2020-11',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2020-10',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2020-07',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2020-06',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2020-05',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2020-03',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2020-02',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2020-01',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2019-12',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2019-11',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2019-10',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2019-09',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2019-08',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2019-07',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2019-06',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2019-05',
+              overdueDays: NumberInt('0')
+            }
+          ]
+        },
+        {
+          accountNo: '10084370',
+          institutionName: 'ROSABON FINANCIAL SERVICES LIMITED',
+          creditType: 'Revenue Loan for Financial / Operating leasing Companies',
+          currency: 'NGN',
+          date: '2020-10-23T23:00:00.000Z',
+          maturityDate: '2021-04-23T23:00:00.000Z',
+          loanAmount: NumberInt('1000000'),
+          installmentAmount: NumberInt('0'),
+          lastPaymentDate: null,
+          outstandingBalance: NumberInt('0'),
+          overdueAmount: NumberInt('0'),
+          status: 'CLOSED',
+          performanceStatus: 'Performing',
+          dateReported: '2021-09-30T15:11:44.000Z',
+          lastUpdated: null,
+          delinquencyStatus: null,
+          paymentHistory: [
+            {
+              month: '2021-09',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2021-08',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2021-07',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2021-06',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2021-05',
+              overdueDays: NumberInt('0')
+            }
+          ]
+        },
+        {
+          accountNo: 'PM200900186112102',
+          institutionName: 'PAGE INTERNATIONAL FINANCIAL SERVICES LIMITED',
+          creditType: 'Term Loan for Financial / Operating leasing Companies',
+          currency: 'NGN',
+          date: '2020-09-06T23:00:00.000Z',
+          maturityDate: '2020-12-25T23:00:00.000Z',
+          loanAmount: NumberInt('500000'),
+          installmentAmount: NumberInt('0'),
+          lastPaymentDate: null,
+          outstandingBalance: NumberInt('0'),
+          overdueAmount: NumberInt('0'),
+          status: 'CLOSED',
+          performanceStatus: 'Performing',
+          dateReported: '2022-03-31T09:42:43.000Z',
+          lastUpdated: null,
+          delinquencyStatus: null,
+          paymentHistory: [
+            {
+              month: '2022-03',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2022-02',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2021-12',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2021-07',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2021-06',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2021-03',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2021-02',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2021-01',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2020-12',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2020-11',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2020-10',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2020-09',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2020-08',
+              overdueDays: NumberInt('0')
+            }
+          ]
+        },
+        {
+          accountNo: '042404635400011118004',
+          institutionName: 'GT BANK',
+          creditType: 'Term Loan for Commercial Banks',
+          currency: 'NGN',
+          date: '2020-07-18T23:00:00.000Z',
+          maturityDate: '2020-07-30T23:00:00.000Z',
+          loanAmount: NumberInt('300000'),
+          installmentAmount: NumberInt('0'),
+          lastPaymentDate: null,
+          outstandingBalance: NumberInt('0'),
+          overdueAmount: NumberInt('0'),
+          status: 'CLOSED',
+          performanceStatus: 'Performing',
+          dateReported: '2020-07-31T00:57:54.000Z',
+          lastUpdated: null,
+          delinquencyStatus: null,
+          paymentHistory: [
+            {
+              month: '2020-07',
+              overdueDays: NumberInt('0')
+            }
+          ]
+        },
+        {
+          accountNo: '042404635400011118003',
+          institutionName: 'GT BANK',
+          creditType: 'Term Loan for Commercial Banks',
+          currency: 'NGN',
+          date: '2019-11-03T23:00:00.000Z',
+          maturityDate: '2020-10-29T23:00:00.000Z',
+          loanAmount: NumberInt('1060000'),
+          installmentAmount: NumberInt('0'),
+          lastPaymentDate: null,
+          outstandingBalance: NumberInt('0'),
+          overdueAmount: NumberInt('0'),
+          status: 'CLOSED',
+          performanceStatus: 'Performing',
+          dateReported: '2020-06-30T08:34:14.000Z',
+          lastUpdated: null,
+          delinquencyStatus: null,
+          paymentHistory: [
+            {
+              month: '2020-06',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2020-05',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2020-03',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2020-02',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2020-01',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2019-12',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2019-11',
+              overdueDays: NumberInt('0')
+            }
+          ]
+        },
+        {
+          accountNo: '042404635400011118002',
+          institutionName: 'GT BANK',
+          creditType: 'Term Loan for Commercial Banks',
+          currency: 'NGN',
+          date: '2019-02-28T23:00:00.000Z',
+          maturityDate: '2020-02-27T23:00:00.000Z',
+          loanAmount: NumberInt('819385'),
+          installmentAmount: NumberInt('0'),
+          lastPaymentDate: null,
+          outstandingBalance: NumberInt('0'),
+          overdueAmount: NumberInt('0'),
+          status: 'CLOSED',
+          performanceStatus: 'Performing',
+          dateReported: '2019-10-31T22:49:39.000Z',
+          lastUpdated: null,
+          delinquencyStatus: null,
+          paymentHistory: [
+            {
+              month: '2019-10',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2019-09',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2019-08',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2019-07',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2019-06',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2019-05',
+              overdueDays: NumberInt('0')
+            }
+          ]
+        },
+        {
+          accountNo: '042404635400011118000',
+          institutionName: 'GT BANK',
+          creditType: 'Term Loan for Commercial Banks',
+          currency: 'NGN',
+          date: '2018-12-03T23:00:00.000Z',
+          maturityDate: '2019-01-02T23:00:00.000Z',
+          loanAmount: NumberInt('950000'),
+          installmentAmount: NumberInt('0'),
+          lastPaymentDate: null,
+          outstandingBalance: NumberInt('0'),
+          overdueAmount: NumberInt('0'),
+          status: 'CLOSED',
+          performanceStatus: 'Performing',
+          dateReported: '2019-01-31T16:00:46.000Z',
+          lastUpdated: null,
+          delinquencyStatus: null,
+          paymentHistory: []
+        },
+        {
+          accountNo: '0010503536',
+          institutionName: 'OCEANIC BANK INTERNATIONAL PLC',
+          creditType: 'Overdraft for Others from Commercial Banks',
+          currency: 'NGN',
+          date: '2012-10-30T23:00:00.000Z',
+          maturityDate: '2012-10-30T23:00:00.000Z',
+          loanAmount: NumberInt('0'),
+          installmentAmount: NumberInt('0'),
+          lastPaymentDate: null,
+          outstandingBalance: NumberInt('0'),
+          overdueAmount: NumberInt('0'),
+          status: 'CLOSED',
+          performanceStatus: 'Performing',
+          dateReported: '2013-03-30T23:00:00.000Z',
+          lastUpdated: null,
+          delinquencyStatus: null,
+          paymentHistory: []
+        },
+        {
+          accountNo: null,
+          institutionName: 'ZEDVANCE LIMITED',
+          creditType: null,
+          currency: null,
+          date: null,
+          maturityDate: '2021-04-01T23:00:00.000Z',
+          loanAmount: NumberInt('80000'),
+          installmentAmount: NumberInt('0'),
+          lastPaymentDate: null,
+          outstandingBalance: NumberInt('0'),
+          overdueAmount: NumberInt('0'),
+          status: 'CLOSED',
+          performanceStatus: 'Performing',
+          dateReported: '1970-01-01T00:00:00.000Z',
+          lastUpdated: null,
+          delinquencyStatus: null,
+          paymentHistory: []
+        },
+        {
+          accountNo: null,
+          institutionName: 'ZEDVANCE LIMITED',
+          creditType: null,
+          currency: null,
+          date: null,
+          maturityDate: '2021-02-05T23:00:00.000Z',
+          loanAmount: NumberInt('50000'),
+          installmentAmount: NumberInt('0'),
+          lastPaymentDate: null,
+          outstandingBalance: NumberInt('0'),
+          overdueAmount: NumberInt('0'),
+          status: 'CLOSED',
+          performanceStatus: 'Performing',
+          dateReported: '1970-01-01T00:00:00.000Z',
+          lastUpdated: null,
+          delinquencyStatus: null,
+          paymentHistory: []
+        },
+        {
+          accountNo: 'PL025211000364',
+          institutionName: 'United Bank for Africa Lagos',
+          creditType: null,
+          currency: 'NGN',
+          date: '2021-08-01T00:00:00.000Z',
+          maturityDate: '2022-07-29T00:00:00.000Z',
+          loanAmount: NumberInt('1000000'),
+          installmentAmount: Double('94559.6'),
+          lastPaymentDate: '2022-03-29T00:00:00.000Z',
+          outstandingBalance: Double('362544.12'),
+          overdueAmount: NumberInt('0'),
+          status: 'OPEN',
+          performanceStatus: 'Performing',
+          dateReported: null,
+          lastUpdated: '2022-04-12T00:00:00.000Z',
+          delinquencyStatus: null,
+          paymentHistory: [
+            {
+              month: '2021-11',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2021-12',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2022-01',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2022-02',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2022-03',
+              overdueDays: NumberInt('0')
+            }
+          ]
+        },
+        {
+          accountNo: '2129089195',
+          institutionName: 'Zedvance Limited Lagos',
+          creditType: 'Personal fixed term loan',
+          currency: 'NGN',
+          date: '2021-02-03T00:00:00.000Z',
+          maturityDate: '2021-04-02T00:00:00.000Z',
+          loanAmount: NumberInt('0'),
+          installmentAmount: NumberInt('0'),
+          lastPaymentDate: '2021-04-15T00:00:00.000Z',
+          outstandingBalance: NumberInt('0'),
+          overdueAmount: NumberInt('0'),
+          status: 'CLOSED',
+          performanceStatus: 'Performing',
+          dateReported: null,
+          lastUpdated: '2022-04-18T00:00:00.000Z',
+          delinquencyStatus: null,
+          paymentHistory: [
+            {
+              month: '2021-03',
+              overdueDays: NumberInt('6')
+            },
+            {
+              month: '2021-04',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2021-06',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2021-07',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2021-08',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2021-09',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2021-10',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2021-11',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2021-12',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2022-01',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2022-02',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2022-03',
+              overdueDays: NumberInt('0')
+            }
+          ]
+        },
+        {
+          accountNo: '042404635400010059000',
+          institutionName: 'Guaranty Trust Bank Plc',
+          creditType: 'Personal Overdraft',
+          currency: 'NGN',
+          date: '2020-11-26T00:00:00.000Z',
+          maturityDate: '2020-12-22T00:00:00.000Z',
+          loanAmount: NumberInt('0'),
+          installmentAmount: NumberInt('1000'),
+          lastPaymentDate: '2020-12-22T00:00:00.000Z',
+          outstandingBalance: NumberInt('200943'),
+          overdueAmount: Double('200943.11'),
+          status: 'OPEN',
+          performanceStatus: 'Performing',
+          dateReported: null,
+          lastUpdated: '2021-08-23T00:00:00.000Z',
+          delinquencyStatus: null,
+          paymentHistory: [
+            {
+              month: '2020-05',
+              overdueDays: NumberInt('9')
+            },
+            {
+              month: '2020-06',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2020-07',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2020-10',
+              overdueDays: NumberInt('0')
+            },
+            {
+              month: '2020-11',
+              overdueDays: NumberInt('4')
+            },
+            {
+              month: '2020-12',
+              overdueDays: NumberInt('35')
+            }
+          ]
+        }
+      ]
+    },
+    lastUpdatedAt: ISODate('2022-05-08T16:11:41.934Z')
+  },
+  advanced: {
+    scores: {
+      score: {
+        ficoScores: [
+          {
+            source: 'CRC',
+            score: NumberInt('695'),
+            reasons: [
+              'The length of time accounts have been established on the credit report is short relative to the other applicants scored.',
+              'Applicant is young relative to the other applicants scored.',
+              'Lack of recent revolving/charge account information on the credit report.',
+              'Time since most recent account opening on the credit report is too short relative to the other applicants scored.'
+            ]
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            score: NumberInt('700'),
+            reasons: null
+          }
+        ],
+        totalNoOfLoans: [
+          {
+            source: 'CRC',
+            value: NumberInt('14')
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            value: NumberInt('8')
+          }
+        ],
+        NPL: [
+          {
+            source: 'CRC',
+            value: NumberInt('0')
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            value: NumberInt('0')
+          }
+        ],
+        totalNoOfActiveLoans: [
+          {
+            source: 'CRC',
+            value: NumberInt('3')
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            value: NumberInt('3')
+          }
+        ],
+        numberOfClosedLoans: [
+          {
+            source: 'CRC',
+            value: NumberInt('11')
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            value: NumberInt('5')
+          }
+        ],
+        totalBorrowed: [
+          {
+            source: 'CRC',
+            value: NumberInt('5869385')
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            value: NumberInt('3710000')
+          }
+        ],
+        highestLoanAmount: [
+          {
+            source: 'CRC',
+            value: NumberInt('1060000')
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            value: NumberInt('1000000')
+          }
+        ],
+        lastLoanAmount: [
+          {
+            source: 'CRC',
+            value: NumberInt('1000000')
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            value: NumberInt('1000000')
+          }
+        ],
+        totalOutstandingBalance: [
+          {
+            source: 'CRC',
+            value: NumberInt('729895')
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            value: Double('1460238.28')
+          }
+        ],
+        totalOverdue: [
+          {
+            source: 'CRC',
+            value: NumberInt('0')
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            value: Double('200943.11')
+          }
+        ],
+        loanAccounts: [
+          {
+            source: 'CRC',
+            accounts: [
+              {
+                accountNo: 'PM200900186132940',
+                institutionName: 'PAGE INTERNATIONAL FINANCIAL SERVICES LIMITED',
+                creditType: 'Term Loan for Financial / Operating leasing Companies',
+                currency: 'NGN',
+                date: '2021-10-19T23:00:00.000Z',
+                maturityDate: '2022-10-25T23:00:00.000Z',
+                loanAmount: NumberInt('1000000'),
+                installmentAmount: NumberInt('0'),
+                lastPaymentDate: null,
+                outstandingBalance: NumberInt('729895'),
+                overdueAmount: NumberInt('0'),
+                status: 'OPEN',
+                performanceStatus: 'Performing',
+                dateReported: '2022-02-28T14:59:15.000Z',
+                lastUpdated: null,
+                delinquencyStatus: null,
+                paymentHistory: [
+                  {
+                    month: '2022-02',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-12',
+                    overdueDays: NumberInt('0')
+                  }
+                ]
+              },
+              {
+                accountNo: null,
+                institutionName: 'MYCREDIT INVESTMENTS LIMITED',
+                creditType: null,
+                currency: null,
+                date: '2021-06-03T23:00:00.000Z',
+                maturityDate: '2021-07-04T23:00:00.000Z',
+                loanAmount: NumberInt('30000'),
+                installmentAmount: NumberInt('34800'),
+                lastPaymentDate: null,
+                outstandingBalance: NumberInt('0'),
+                overdueAmount: NumberInt('0'),
+                status: 'OPEN',
+                performanceStatus: 'Performing',
+                dateReported: '1970-01-01T00:00:00.000Z',
+                lastUpdated: null,
+                delinquencyStatus: null,
+                paymentHistory: []
+              },
+              {
+                accountNo: '042404635400010059000',
+                institutionName: 'GT BANK',
+                creditType: 'Overdraft for Commercial Banks',
+                currency: 'NGN',
+                date: '2020-11-25T23:00:00.000Z',
+                maturityDate: '2020-12-21T23:00:00.000Z',
+                loanAmount: NumberInt('0'),
+                installmentAmount: NumberInt('0'),
+                lastPaymentDate: null,
+                outstandingBalance: NumberInt('0'),
+                overdueAmount: NumberInt('0'),
+                status: 'OPEN',
+                performanceStatus: 'Performing',
+                dateReported: '2021-01-30T23:00:01.000Z',
+                lastUpdated: null,
+                delinquencyStatus: null,
+                paymentHistory: [
+                  {
+                    month: '2021-01',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-12',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-11',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-10',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-07',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-06',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-05',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-04',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-02',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-01',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-12',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-11',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-10',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-09',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-08',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-07',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-06',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-05',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-04',
+                    overdueDays: NumberInt('0')
+                  }
+                ]
+              },
+              {
+                accountNo: '10084370',
+                institutionName: 'ROSABON FINANCIAL SERVICES LIMITED',
+                creditType: 'Revenue Loan for Financial / Operating leasing Companies',
+                currency: 'NGN',
+                date: '2020-10-23T23:00:00.000Z',
+                maturityDate: '2021-04-23T23:00:00.000Z',
+                loanAmount: NumberInt('1000000'),
+                installmentAmount: NumberInt('0'),
+                lastPaymentDate: null,
+                outstandingBalance: NumberInt('0'),
+                overdueAmount: NumberInt('0'),
+                status: 'CLOSED',
+                performanceStatus: 'Performing',
+                dateReported: '2021-09-30T15:11:44.000Z',
+                lastUpdated: null,
+                delinquencyStatus: null,
+                paymentHistory: [
+                  {
+                    month: '2021-09',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-08',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-07',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-06',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-05',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-04',
+                    overdueDays: NumberInt('0')
+                  }
+                ]
+              },
+              {
+                accountNo: 'PM200900186112102',
+                institutionName: 'PAGE INTERNATIONAL FINANCIAL SERVICES LIMITED',
+                creditType: 'Term Loan for Financial / Operating leasing Companies',
+                currency: 'NGN',
+                date: '2020-09-06T23:00:00.000Z',
+                maturityDate: '2020-12-25T23:00:00.000Z',
+                loanAmount: NumberInt('500000'),
+                installmentAmount: NumberInt('0'),
+                lastPaymentDate: null,
+                outstandingBalance: NumberInt('0'),
+                overdueAmount: NumberInt('0'),
+                status: 'CLOSED',
+                performanceStatus: 'Performing',
+                dateReported: '2022-02-28T14:59:15.000Z',
+                lastUpdated: null,
+                delinquencyStatus: null,
+                paymentHistory: [
+                  {
+                    month: '2022-02',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-12',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-07',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-06',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-02',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-01',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-12',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-11',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-10',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-09',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-08',
+                    overdueDays: NumberInt('0')
+                  }
+                ]
+              },
+              {
+                accountNo: '042404635400011118004',
+                institutionName: 'GT BANK',
+                creditType: 'Term Loan for Commercial Banks',
+                currency: 'NGN',
+                date: '2020-07-18T23:00:00.000Z',
+                maturityDate: '2020-07-30T23:00:00.000Z',
+                loanAmount: NumberInt('300000'),
+                installmentAmount: NumberInt('0'),
+                lastPaymentDate: null,
+                outstandingBalance: NumberInt('0'),
+                overdueAmount: NumberInt('0'),
+                status: 'CLOSED',
+                performanceStatus: 'Performing',
+                dateReported: '2020-07-31T00:57:54.000Z',
+                lastUpdated: null,
+                delinquencyStatus: null,
+                paymentHistory: [
+                  {
+                    month: '2020-07',
+                    overdueDays: NumberInt('0')
+                  }
+                ]
+              },
+              {
+                accountNo: '042404635400011118003',
+                institutionName: 'GT BANK',
+                creditType: 'Term Loan for Commercial Banks',
+                currency: 'NGN',
+                date: '2019-11-03T23:00:00.000Z',
+                maturityDate: '2020-10-29T23:00:00.000Z',
+                loanAmount: NumberInt('1060000'),
+                installmentAmount: NumberInt('0'),
+                lastPaymentDate: null,
+                outstandingBalance: NumberInt('0'),
+                overdueAmount: NumberInt('0'),
+                status: 'CLOSED',
+                performanceStatus: 'Performing',
+                dateReported: '2020-06-30T08:34:14.000Z',
+                lastUpdated: null,
+                delinquencyStatus: null,
+                paymentHistory: [
+                  {
+                    month: '2020-06',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-05',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-04',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-02',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-01',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-12',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-11',
+                    overdueDays: NumberInt('0')
+                  }
+                ]
+              },
+              {
+                accountNo: '042404635400011118002',
+                institutionName: 'GT BANK',
+                creditType: 'Term Loan for Commercial Banks',
+                currency: 'NGN',
+                date: '2019-02-28T23:00:00.000Z',
+                maturityDate: '2020-02-27T23:00:00.000Z',
+                loanAmount: NumberInt('819385'),
+                installmentAmount: NumberInt('0'),
+                lastPaymentDate: null,
+                outstandingBalance: NumberInt('0'),
+                overdueAmount: NumberInt('0'),
+                status: 'CLOSED',
+                performanceStatus: 'Performing',
+                dateReported: '2019-10-31T22:49:39.000Z',
+                lastUpdated: null,
+                delinquencyStatus: null,
+                paymentHistory: [
+                  {
+                    month: '2019-10',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-09',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-08',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-07',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-06',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-05',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2019-04',
+                    overdueDays: NumberInt('0')
+                  }
+                ]
+              },
+              {
+                accountNo: '042404635400011118001',
+                institutionName: 'GT BANK',
+                creditType: 'Term Loan for Commercial Banks',
+                currency: 'NGN',
+                date: '2019-01-07T23:00:00.000Z',
+                maturityDate: '2019-02-27T23:00:00.000Z',
+                loanAmount: NumberInt('0'),
+                installmentAmount: NumberInt('0'),
+                lastPaymentDate: null,
+                outstandingBalance: NumberInt('0'),
+                overdueAmount: NumberInt('0'),
+                status: 'CLOSED',
+                performanceStatus: 'Performing',
+                dateReported: '2019-02-28T18:01:52.000Z',
+                lastUpdated: null,
+                delinquencyStatus: null,
+                paymentHistory: []
+              },
+              {
+                accountNo: '042404635400011118000',
+                institutionName: 'GT BANK',
+                creditType: 'Term Loan for Commercial Banks',
+                currency: 'NGN',
+                date: '2018-12-03T23:00:00.000Z',
+                maturityDate: '2019-01-02T23:00:00.000Z',
+                loanAmount: NumberInt('950000'),
+                installmentAmount: NumberInt('0'),
+                lastPaymentDate: null,
+                outstandingBalance: NumberInt('0'),
+                overdueAmount: NumberInt('0'),
+                status: 'CLOSED',
+                performanceStatus: 'Performing',
+                dateReported: '2019-01-31T16:00:46.000Z',
+                lastUpdated: null,
+                delinquencyStatus: null,
+                paymentHistory: []
+              },
+              {
+                accountNo: '0010503536',
+                institutionName: 'OCEANIC BANK INTERNATIONAL PLC',
+                creditType: 'Overdraft for Others from Commercial Banks',
+                currency: 'NGN',
+                date: '2012-10-30T23:00:00.000Z',
+                maturityDate: '2012-10-30T23:00:00.000Z',
+                loanAmount: NumberInt('0'),
+                installmentAmount: NumberInt('0'),
+                lastPaymentDate: null,
+                outstandingBalance: NumberInt('0'),
+                overdueAmount: NumberInt('0'),
+                status: 'CLOSED',
+                performanceStatus: 'Performing',
+                dateReported: '2013-03-30T23:00:00.000Z',
+                lastUpdated: null,
+                delinquencyStatus: null,
+                paymentHistory: []
+              },
+              {
+                accountNo: null,
+                institutionName: 'ZEDVANCE LIMITED',
+                creditType: null,
+                currency: null,
+                date: null,
+                maturityDate: '2021-04-01T23:00:00.000Z',
+                loanAmount: NumberInt('80000'),
+                installmentAmount: NumberInt('0'),
+                lastPaymentDate: null,
+                outstandingBalance: NumberInt('0'),
+                overdueAmount: NumberInt('0'),
+                status: 'CLOSED',
+                performanceStatus: 'Performing',
+                dateReported: '1970-01-01T00:00:00.000Z',
+                lastUpdated: null,
+                delinquencyStatus: null,
+                paymentHistory: []
+              },
+              {
+                accountNo: null,
+                institutionName: 'ZEDVANCE LIMITED',
+                creditType: null,
+                currency: null,
+                date: null,
+                maturityDate: '2021-02-28T23:00:00.000Z',
+                loanAmount: NumberInt('80000'),
+                installmentAmount: NumberInt('0'),
+                lastPaymentDate: null,
+                outstandingBalance: NumberInt('0'),
+                overdueAmount: NumberInt('0'),
+                status: 'CLOSED',
+                performanceStatus: 'Performing',
+                dateReported: '1970-01-01T00:00:00.000Z',
+                lastUpdated: null,
+                delinquencyStatus: null,
+                paymentHistory: []
+              },
+              {
+                accountNo: null,
+                institutionName: 'ZEDVANCE LIMITED',
+                creditType: null,
+                currency: null,
+                date: null,
+                maturityDate: '2021-02-05T23:00:00.000Z',
+                loanAmount: NumberInt('50000'),
+                installmentAmount: NumberInt('0'),
+                lastPaymentDate: null,
+                outstandingBalance: NumberInt('0'),
+                overdueAmount: NumberInt('0'),
+                status: 'CLOSED',
+                performanceStatus: 'Performing',
+                dateReported: '1970-01-01T00:00:00.000Z',
+                lastUpdated: null,
+                delinquencyStatus: null,
+                paymentHistory: []
+              }
+            ]
+          },
+          {
+            source: 'FIRST_CENTRAL',
+            accounts: [
+              {
+                accountNo: 'PM200900186132940',
+                institutionName: 'Page International Financial Services Limited ',
+                creditType: null,
+                currency: 'NGN',
+                date: '2021-10-20T00:00:00.000Z',
+                maturityDate: '2022-10-26T00:00:00.000Z',
+                loanAmount: NumberInt('1000000'),
+                installmentAmount: NumberInt('113197'),
+                lastPaymentDate: '2022-02-26T00:00:00.000Z',
+                outstandingBalance: NumberInt('729895'),
+                overdueAmount: NumberInt('0'),
+                status: 'OPEN',
+                performanceStatus: 'Performing',
+                dateReported: null,
+                lastUpdated: '2022-03-21T00:00:00.000Z',
+                delinquencyStatus: null,
+                paymentHistory: [
+                  {
+                    month: '2022-01',
+                    overdueDays: NumberInt('13')
+                  },
+                  {
+                    month: '2022-02',
+                    overdueDays: NumberInt('0')
+                  }
+                ]
+              },
+              {
+                accountNo: 'PL025211000364',
+                institutionName: 'United Bank for Africa Lagos',
+                creditType: null,
+                currency: 'NGN',
+                date: '2021-08-01T00:00:00.000Z',
+                maturityDate: '2022-07-29T00:00:00.000Z',
+                loanAmount: NumberInt('1000000'),
+                installmentAmount: Double('94559.6'),
+                lastPaymentDate: '2022-02-28T00:00:00.000Z',
+                outstandingBalance: Double('529400.28'),
+                overdueAmount: NumberInt('0'),
+                status: 'OPEN',
+                performanceStatus: 'Performing',
+                dateReported: null,
+                lastUpdated: '2022-03-10T00:00:00.000Z',
+                delinquencyStatus: null,
+                paymentHistory: [
+                  {
+                    month: '2021-11',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-12',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2022-01',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2022-02',
+                    overdueDays: NumberInt('0')
+                  }
+                ]
+              },
+              {
+                accountNo: '2129089195',
+                institutionName: 'Zedvance Limited Lagos',
+                creditType: 'Personal fixed term loan',
+                currency: 'NGN',
+                date: '2021-02-03T00:00:00.000Z',
+                maturityDate: '2021-04-02T00:00:00.000Z',
+                loanAmount: NumberInt('80000'),
+                installmentAmount: NumberInt('0'),
+                lastPaymentDate: '2021-04-15T00:00:00.000Z',
+                outstandingBalance: NumberInt('0'),
+                overdueAmount: NumberInt('0'),
+                status: 'CLOSED',
+                performanceStatus: 'Performing',
+                dateReported: null,
+                lastUpdated: '2022-03-14T00:00:00.000Z',
+                delinquencyStatus: null,
+                paymentHistory: [
+                  {
+                    month: '2021-03',
+                    overdueDays: NumberInt('6')
+                  },
+                  {
+                    month: '2021-04',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-06',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-07',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-08',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-09',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-10',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-11',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-12',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2022-01',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2022-02',
+                    overdueDays: NumberInt('0')
+                  }
+                ]
+              },
+              {
+                accountNo: '2129939660',
+                institutionName: 'Zedvance Limited Lagos',
+                creditType: 'Personal fixed term loan',
+                currency: 'NGN',
+                date: '2021-02-01T00:00:00.000Z',
+                maturityDate: '2021-03-01T00:00:00.000Z',
+                loanAmount: NumberInt('80000'),
+                installmentAmount: NumberInt('0'),
+                lastPaymentDate: '2021-02-26T00:00:00.000Z',
+                outstandingBalance: NumberInt('0'),
+                overdueAmount: NumberInt('0'),
+                status: 'CLOSED',
+                performanceStatus: 'Performing',
+                dateReported: null,
+                lastUpdated: '2022-03-14T00:00:00.000Z',
+                delinquencyStatus: null,
+                paymentHistory: [
+                  {
+                    month: '2021-01',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-02',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-03',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-04',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-06',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-07',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-08',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-09',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-10',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-11',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-12',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2022-01',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2022-02',
+                    overdueDays: NumberInt('0')
+                  }
+                ]
+              },
+              {
+                accountNo: '2129706059',
+                institutionName: 'Zedvance Limited Lagos',
+                creditType: 'Personal fixed term loan',
+                currency: 'NGN',
+                date: '2021-01-06T00:00:00.000Z',
+                maturityDate: '2021-02-06T00:00:00.000Z',
+                loanAmount: NumberInt('50000'),
+                installmentAmount: NumberInt('0'),
+                lastPaymentDate: '2021-01-26T00:00:00.000Z',
+                outstandingBalance: NumberInt('0'),
+                overdueAmount: NumberInt('0'),
+                status: 'CLOSED',
+                performanceStatus: 'Performing',
+                dateReported: null,
+                lastUpdated: '2022-03-14T00:00:00.000Z',
+                delinquencyStatus: null,
+                paymentHistory: [
+                  {
+                    month: '2020-12',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-01',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-02',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-04',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-06',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-07',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-08',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-09',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-10',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-11',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-12',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2022-01',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2022-02',
+                    overdueDays: NumberInt('0')
+                  }
+                ]
+              },
+              {
+                accountNo: '042404635400010059000',
+                institutionName: 'Guaranty Trust Bank Plc',
+                creditType: 'Personal Overdraft',
+                currency: 'NGN',
+                date: '2020-11-26T00:00:00.000Z',
+                maturityDate: '2020-12-22T00:00:00.000Z',
+                loanAmount: NumberInt('0'),
+                installmentAmount: NumberInt('1000'),
+                lastPaymentDate: '2020-12-22T00:00:00.000Z',
+                outstandingBalance: NumberInt('200943'),
+                overdueAmount: Double('200943.11'),
+                status: 'OPEN',
+                performanceStatus: 'Performing',
+                dateReported: null,
+                lastUpdated: '2021-08-23T00:00:00.000Z',
+                delinquencyStatus: null,
+                paymentHistory: [
+                  {
+                    month: '2020-04',
+                    overdueDays: NumberInt('6')
+                  },
+                  {
+                    month: '2020-05',
+                    overdueDays: NumberInt('9')
+                  },
+                  {
+                    month: '2020-06',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-07',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-10',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-11',
+                    overdueDays: NumberInt('4')
+                  },
+                  {
+                    month: '2020-12',
+                    overdueDays: NumberInt('35')
+                  }
+                ]
+              },
+              {
+                accountNo: '10084370',
+                institutionName: 'Rosabon Financial Services',
+                creditType: null,
+                currency: 'NGN',
+                date: '2020-10-24T00:00:00.000Z',
+                maturityDate: '2021-04-24T00:00:00.000Z',
+                loanAmount: NumberInt('1000000'),
+                installmentAmount: Double('182148.21'),
+                lastPaymentDate: '2021-05-31T00:00:00.000Z',
+                outstandingBalance: NumberInt('0'),
+                overdueAmount: NumberInt('0'),
+                status: 'CLOSED',
+                performanceStatus: 'Performing',
+                dateReported: null,
+                lastUpdated: '2021-12-13T00:00:00.000Z',
+                delinquencyStatus: null,
+                paymentHistory: [
+                  {
+                    month: '2021-01',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-05',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-06',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-08',
+                    overdueDays: NumberInt('0')
+                  }
+                ]
+              },
+              {
+                accountNo: 'PM200900186112102',
+                institutionName: 'Page International Financial Services Limited ',
+                creditType: null,
+                currency: 'NGN',
+                date: '2020-09-07T00:00:00.000Z',
+                maturityDate: '2020-12-26T00:00:00.000Z',
+                loanAmount: NumberInt('500000'),
+                installmentAmount: NumberInt('144323'),
+                lastPaymentDate: '2020-12-26T00:00:00.000Z',
+                outstandingBalance: NumberInt('0'),
+                overdueAmount: NumberInt('0'),
+                status: 'CLOSED',
+                performanceStatus: 'Performing',
+                dateReported: null,
+                lastUpdated: '2022-03-21T00:00:00.000Z',
+                delinquencyStatus: null,
+                paymentHistory: [
+                  {
+                    month: '2020-08',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-09',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-10',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-11',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2020-12',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-01',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-02',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-03',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-04',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-05',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-06',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2021-07',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2022-01',
+                    overdueDays: NumberInt('0')
+                  },
+                  {
+                    month: '2022-02',
+                    overdueDays: NumberInt('0')
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      creditEnquiries: [
+        {
+          source: 'CRC',
+          enquiries: [
+            {
+              institutionName: 'Mycredit Investments Limited',
+              date: '2022-01-24T00:00:00.000Z'
+            },
+            {
+              institutionName: 'Mycredit Investments Limited',
+              date: '2022-01-24T00:00:00.000Z'
+            },
+            {
+              institutionName: 'Mycredit Investments Limited',
+              date: '2022-01-24T00:00:00.000Z'
+            },
+            {
+              institutionName: 'Mycredit Investments Limited',
+              date: '2021-11-06T00:00:00.000Z'
+            },
+            {
+              institutionName: 'Mycredit Investments Limited',
+              date: '2021-11-06T00:00:00.000Z'
+            },
+            {
+              institutionName: 'Mycredit Investments Limited',
+              date: '2021-11-06T00:00:00.000Z'
+            },
+            {
+              institutionName: 'Page International Financial Services Limited',
+              date: '2021-10-14T00:00:00.000Z'
+            },
+            {
+              institutionName: 'Mycredit Investments Limited',
+              date: '2021-10-13T00:00:00.000Z'
+            },
+            {
+              institutionName: 'Mycredit Investments Limited',
+              date: '2021-10-13T00:00:00.000Z'
+            },
+            {
+              institutionName: 'Mycredit Investments Limited',
+              date: '2021-10-13T00:00:00.000Z'
+            }
+          ]
+        },
+        {
+          source: 'FIRST_CENTRAL',
+          enquiries: []
+        }
+      ],
+      name: 'Kingsley Ibe Onyedinma'
+    },
+    lastUpdatedAt: ISODate('2022-04-09T17:38:31.530Z'),
+    score: {}
+  },
+  createdAt: ISODate('2022-03-23T15:05:54.027Z'),
+  updatedAt: ISODate('2023-05-31T04:52:00.403Z'),
+  __v: NumberInt('0'),
+  firstCentral: {
+    lastUpdatedAt: ISODate('2022-11-04T09:45:06.093Z'),
+    score: {
+      totalNoOfDelinquentFacilities: NumberInt('0'),
+      totalNoOfLoans: NumberInt('1'),
+      totalNoOfActiveLoans: NumberInt('0'),
+      totalNoOfClosedLoans: NumberInt('1'),
+      maxNoOfDays: '',
+      totalNoOfInstitutions: NumberInt('1'),
+      totalOverdue: '0.00',
+      totalBorrowed: NumberInt('0'),
+      highestLoanAmount: NumberInt('0'),
+      totalOutstanding: '0.00',
+      totalMonthlyInstallment: '0.00',
+      totalNoOfOverdueAccounts: '0',
+      totalNoOfPerformingLoans: NumberInt('1'),
+      firstCentralEnquiryResultID: '25859585',
+      firstCentralEnquiryEngineID: '11313541',
+      loanPerformance: false,
+      creditEnquiries: false,
+      loanHistory: false
+    }
+  },
+  searchedDate: ISODate('2022-11-04T09:45:06.093Z'),
+  appId: ObjectId('6250ae886708d9001229049c'),
+  crc: {
+    lastUpdatedAt: ISODate('2023-05-31T04:51:59.987Z'),
+    score: {}
+  },
+  crcNano: {
+    lastUpdatedAt: ISODate('2023-05-31T04:51:59.987Z'),
+    score: {}
+  },
+  creditRegistry: {
+    lastUpdatedAt: ISODate('2023-05-31T04:51:59.987Z'),
+    score: {}
+  },
+  creditSummary: {
+    lastUpdatedAt: ISODate('2023-05-31T04:51:59.987Z'),
+    score: {}
+  },
+  firstCentralNano: {
+    lastUpdatedAt: ISODate('2023-05-31T04:51:59.987Z'),
+    score: {}
+  },
+  premium: {
+    lastUpdatedAt: ISODate('2023-05-31T04:51:59.987Z'),
+    score: {}
+  }
+}
