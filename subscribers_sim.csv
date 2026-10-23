@@ -1,0 +1,31 @@
+subscriber_id,full_name,bvn,plan,subscription_status,payment_status,subscribed_at,cycle_day,last_payment_date,next_run_date,completed_cycles,sim_case,sim_expected,sim_reason
+SUB-0001,Bisi Balogun,99601815908,PLUS,active,paid,2026-05-22,22,2026-10-22,2026-10-22,4,due_today,selected,
+SUB-0002,Aisha Okafor,99166131860,PRO,active,paid,2026-02-22,22,2026-10-22,2026-10-22,7,due_today,selected,
+SUB-0003,Rakiya Nnadi,99139099603,PLUS,active,paid,2026-07-22,22,2026-10-22,2026-10-22,2,due_today,selected,
+SUB-0004,Tunde Alade,99246281948,PRO,active,paid,2025-10-22,22,2026-10-22,2026-10-22,11,due_today,selected,
+SUB-0005,Rakiya Idowu,99219935181,PLUS,active,paid,2026-08-22,22,2026-10-22,2026-10-22,1,due_today,selected,
+SUB-0006,Ifeoma Okafor,99937865797,PRO,active,paid,2026-09-22,22,2026-10-22,2026-10-22,0,first_cycle_due_today,selected,
+SUB-0007,Emeka Okoro,99323194875,PLUS,lapsed,failed,2026-04-22,22,2026-08-22,2026-10-22,5,due_today_lapsed,skipped,lapsed
+SUB-0008,Sani Onuoha,99491186252,BASIC,active,paid,2026-06-22,22,2026-10-22,2026-10-22,3,due_today_ineligible_plan,skipped,ineligible plan
+SUB-0009,Danjuma Salami,,PLUS,active,paid,2026-06-22,22,2026-10-22,2026-10-22,3,due_today_no_bvn,skipped,no BVN
+SUB-0010,Obinna Nnadi,99711471049,PRO,active,overdue,2026-03-22,22,2026-09-22,2026-10-22,6,due_today_payment_overdue,open_decision,"payment overdue, rule not decided"
+SUB-0011,Gbenga Obi,99746507529,PLUS,active,paid,2026-04-29,29,2026-09-29,2026-10-29,5,month_end_29,skipped,not due today
+SUB-0012,Ibrahim Salami,99034236671,PRO,active,paid,2026-05-30,30,2026-09-30,2026-10-30,4,month_end_30,skipped,not due today
+SUB-0013,Chinedu Onuoha,99684268465,PLUS,active,paid,2026-01-31,31,2026-09-30,2026-10-31,8,month_end_31,skipped,not due today
+SUB-0014,Gbenga Sule,99632122330,PRO,active,paid,2026-06-21,21,2026-10-21,2026-11-21,4,due_yesterday,skipped,not due today
+SUB-0015,Obinna Obi,99924402685,PLUS,active,paid,2026-06-23,23,2026-09-23,2026-10-23,3,due_tomorrow,skipped,not due today
+SUB-0016,Damilola Nnadi,99528907866,PLUS,active,paid,2025-12-01,1,2026-10-01,2026-11-01,10,not_due,skipped,not due today
+SUB-0017,Hauwa Fashola,99176031372,PRO,active,paid,2026-04-03,3,2026-10-03,2026-11-03,6,not_due,skipped,not due today
+SUB-0018,Ibrahim Lawal,99901092815,BASIC,active,paid,2026-03-05,5,2026-10-05,2026-11-05,7,not_due,skipped,not due today
+SUB-0019,Damilola Adebayo,99139624595,PLUS,active,paid,2026-07-08,8,2026-10-08,2026-11-08,3,not_due,skipped,not due today
+SUB-0020,Obinna Eze,99177774121,PRO,active,paid,2026-01-11,11,2026-10-11,2026-11-11,9,not_due,skipped,not due today
+SUB-0021,Sani Lawal,99472803852,BASIC,active,paid,2026-08-14,14,2026-10-14,2026-11-14,2,not_due,skipped,not due today
+SUB-0022,Nkechi Alade,99084148525,PLUS,active,paid,2026-05-17,17,2026-10-17,2026-11-17,5,not_due,skipped,not due today
+SUB-0023,Titilayo Abubakar,99888539336,PRO,active,paid,2025-11-19,19,2026-10-19,2026-11-19,11,not_due,skipped,not due today
+SUB-0024,Sani Yakubu,99338750047,PLUS,lapsed,failed,2026-02-24,24,2026-07-24,2026-10-24,7,not_due_lapsed,skipped,not due today
+SUB-0025,Amara Nwosu,99957551313,PRO,cancelled,paid,2026-04-26,26,2026-07-26,2026-10-26,5,not_due_cancelled,skipped,not due today
+SUB-0026,Obinna Nwosu,99537990751,BASIC,cancelled,paid,2026-06-27,27,2026-07-27,2026-10-27,3,not_due_cancelled,skipped,not due today
+SUB-0027,Ibrahim Kalu,99637265167,PLUS,active,paid,2026-07-28,28,2026-09-28,2026-10-28,2,not_due,skipped,not due today
+SUB-0028,Hauwa Oyelaran,99122202972,PLUS,active,overdue,2026-05-02,2,2026-09-02,2026-11-02,5,not_due_payment_overdue,skipped,not due today
+SUB-0029,Damilola Obi,99975288200,PRO,active,paid,2026-06-09,9,2026-10-09,2026-11-09,4,not_due,skipped,not due today
+SUB-0030,Ikenna Oyelaran,99182633043,PLUS,active,paid,2026-10-13,13,2026-10-13,2026-11-13,0,first_cycle_not_due,skipped,not due today
