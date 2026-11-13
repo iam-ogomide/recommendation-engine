@@ -16,6 +16,11 @@ from .ledger import build_ledger_row, write_ledger_row
 from .pricing import price_event, UnknownItemError
 from .usage_event import UsageEvent
 
+# The business says there is no daily budget, only pay-as-you-go
+# from the user's wallet. So the limit check is switched OFF.
+# Change this to True if limits are ever wanted again.
+CHECK_LIMITS = False
+
 
 def handle_receipt(raw, prices, budgets, connection, redis_client, usd_to_ngn):
     # Step 1: check the receipt is filled in properly.
@@ -37,11 +42,12 @@ def handle_receipt(raw, prices, budgets, connection, redis_client, usd_to_ngn):
     # Step 4: update the running totals in Redis.
     add_to_counters(redis_client, row)
 
-    # Step 5: the manager checks the limits.
-    limits = check_limits(redis_client, budgets, event.subscriber_ref, event.plan)
-
-    # Step 6: tell the gateway if a limit was hit.
-    send_signal(limits)
+    # Steps 5 and 6: check the limits and tell the gateway.
+    # These only run when CHECK_LIMITS is True.
+    limits = None
+    if CHECK_LIMITS:
+        limits = check_limits(redis_client, budgets, event.subscriber_ref, event.plan)
+        send_signal(limits)
 
     return {
         "status": "recorded",

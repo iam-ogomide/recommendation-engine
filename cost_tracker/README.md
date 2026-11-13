@@ -12,11 +12,18 @@ A usage event (a "receipt") is sent by a gateway. `consumer.py` runs it through:
 2. `pricing.py` works out the cost in naira
 3. `ledger.py` writes it in PostgreSQL (the official record)
 4. `counters.py` updates the running totals in Redis
-5. `enforce.py` checks the limits and decides on a signal
-6. `send_signal` passes the signal on (right now it only prints)
+5. `enforce.py` checks the limits (switched OFF, see below)
+6. `send_signal` passes a signal on (switched OFF, and it only prints)
 
 If the ledger already has a receipt, it is skipped, so nothing is counted twice.
 A receipt that can never be processed is saved in the `bad_receipts` table.
+
+### Limits are switched off
+
+The business says there is no daily budget, only pay-as-you-go from the user's
+wallet. So `CHECK_LIMITS = False` in `consumer.py`. `enforce.py` is kept in case
+limits are wanted again. To turn them on, set it to `True` and put real numbers
+in `config/budgets.yaml`.
 
 ## Files
 
