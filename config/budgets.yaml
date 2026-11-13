@@ -1,0 +1,9 @@
+# ALL NUMBERS ARE MADE UP. The team decides the real ones.
+company:
+  daily_budget_ngn: 10000
+  tier_cap_at: 0.8        # at 80% of the budget, switch to a cheaper brain
+  pause_spend_at: 1.0     # at 100%, stop the paid things
+
+plans:
+  free:    {monthly_bureau_pulls: 1}    # signed up, score check only
+  rebound: {monthly_bureau_pulls: 10}   # joined the Rebound Cliq

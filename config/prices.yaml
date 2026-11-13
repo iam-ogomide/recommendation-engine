@@ -1,0 +1,27 @@
+# ALL NUMBERS ARE MADE UP. The Business Lead supplies the real ones.
+items:
+  "external-llm:input":
+    price: 3.0
+    per: 1000000      # price is for every 1,000,000 tokens
+    currency: USD
+    unit: tokens
+  "external-llm:output":
+    price: 15.0
+    per: 1000000
+    currency: USD
+    unit: tokens
+  granite-4.1-3b:
+    price: 0.5        # a flat stand-in, naira per CPU second
+    per: 1
+    currency: NGN
+    unit: cpu_seconds
+  crc_report:
+    price: 300
+    per: 1
+    currency: NGN
+    unit: bureau_pulls
+  fico_score:
+    price: 50
+    per: 1
+    currency: NGN
+    unit: bureau_pulls

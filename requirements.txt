@@ -2,3 +2,6 @@ pydantic==2.13.5
 python-dotenv==1.2.2
 google-genai==1.0.0
 pydantic>=2.6.0
+pyyaml==6.0.2
+psycopg[binary]==3.3.3
+redis==5.2.1

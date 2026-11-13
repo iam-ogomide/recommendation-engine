@@ -1,0 +1,6 @@
+# Secrets. Never upload these.
+.env
+
+# Python leftovers that don't belong in the repo
+__pycache__/
+*.pyc
