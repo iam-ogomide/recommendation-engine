@@ -1,0 +1,63 @@
+# config.yaml
+# Settings for the Repayment Coach.
+# These values are PROPOSED. Please confirm them with the product team.
+#
+# The Coach code (coach.py) reads ONLY the banned_phrases list.
+# evals.py checks that the tools and message limits below agree with
+# coach.py and output.schema.json, so none of them can drift apart.
+
+# ---------------------------------------------------------------
+# The ONLY tools the Repayment Coach may use.
+# IMPORTANT: this list grants nothing by itself.
+# The policy engine enforces every real permission.
+# ---------------------------------------------------------------
+tools:
+  - name: repayment.get_schedule
+    kind: read                          # only looks things up
+    needs_person_confirmation: false
+
+  - name: repayment.get_collection_log
+    kind: read                          # only looks things up
+    needs_person_confirmation: false
+
+  - name: repayment.propose_pause
+    kind: propose                       # T3 tool. Proposes only, changes nothing.
+    needs_person_confirmation: true     # the subscriber must confirm in the app
+
+  - name: recommendation.create_draft
+    kind: save                          # saves a draft message, nothing is sent
+    needs_person_confirmation: false
+
+# ---------------------------------------------------------------
+# Message size limits. They must match output.schema.json.
+# ---------------------------------------------------------------
+message:
+  max_title_chars: 60
+  max_body_chars: 320
+  max_buttons: 2
+
+# ---------------------------------------------------------------
+# Words and phrases the Coach must never use in a message.
+# Matching ignores capital letters and only matches whole words.
+# ---------------------------------------------------------------
+banned_phrases:
+  - legal action
+  - lawsuit
+  - court
+  - penalty
+  - penalties
+  - fee
+  - fees
+  - blacklist
+  - blacklisted
+  - credit score
+  - in default
+  - delinquent
+  - overdue
+  - or else
+  - final warning
+  - you must pay
+  - pay now
+  - urgent
+  - immediately
+  - irresponsible
