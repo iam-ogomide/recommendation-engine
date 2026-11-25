@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RepaymentCoachOutput",
+  "description": "The only shapes the Repayment Coach may hand to the Orchestrator. Three kinds: reminder, failed_help, pause_proposal.",
+
+  "oneOf": [
+    { "$ref": "#/$defs/reminder" },
+    { "$ref": "#/$defs/failed_help" },
+    { "$ref": "#/$defs/pause_proposal" }
+  ],
+
+  "$defs": {
+
+    "message": {
+      "type": "object",
+      "description": "The words the subscriber will read.",
+      "properties": {
+        "title": { "type": "string", "minLength": 1, "maxLength": 60 },
+        "body":  { "type": "string", "minLength": 1, "maxLength": 320 }
+      },
+      "required": ["title", "body"],
+      "additionalProperties": false
+    },
+
+    "button": {
+      "type": "object",
+      "description": "A tap option under the message. Only these two actions are allowed.",
+      "properties": {
+        "label":  { "type": "string", "minLength": 1, "maxLength": 25 },
+        "action": { "enum": ["see_schedule", "ask_to_pause"] }
+      },
+      "required": ["label", "action"],
+      "additionalProperties": false
+    },
+
+    "reminder": {
+      "type": "object",
+      "description": "Kind 1: a friendly heads-up before a debit.",
+      "properties": {
+        "schema_version": { "const": "1.0" },
+        "kind":           { "const": "reminder" },
+        "run_id":         { "type": "string", "minLength": 1 },
+        "subscriber_ref": { "type": "string", "minLength": 1 },
+        "amount_ngn":     { "type": "number", "exclusiveMinimum": 0 },
+        "due_date":       { "type": "string", "format": "date" },
+        "message":        { "$ref": "#/$defs/message" },
+        "buttons":        { "type": "array", "items": { "$ref": "#/$defs/button" }, "maxItems": 2 }
+      },
+      "required": ["schema_version", "kind", "run_id", "subscriber_ref",
+                   "amount_ngn", "due_date", "message", "buttons"],
+      "additionalProperties": false
+    },
+
+    "failed_help": {
+      "type": "object",
+      "description": "Kind 2: help after a debit failed.",
+      "properties": {
+        "schema_version": { "const": "1.0" },
+        "kind":           { "const": "failed_help" },
+        "run_id":         { "type": "string", "minLength": 1 },
+        "subscriber_ref": { "type": "string", "minLength": 1 },
+        "amount_ngn":     { "type": "number", "exclusiveMinimum": 0 },
+        "failed_date":    { "type": "string", "format": "date" },
+        "reason_code":    { "type": "string", "pattern": "^[a-z0-9_]{1,40}$" },
+        "message":        { "$ref": "#/$defs/message" },
+        "buttons":        { "type": "array", "items": { "$ref": "#/$defs/button" }, "maxItems": 2 }
+      },
+      "required": ["schema_version", "kind", "run_id", "subscriber_ref",
+                   "amount_ngn", "failed_date", "reason_code", "message", "buttons"],
+      "additionalProperties": false
+    },
+
+    "pause_proposal": {
+      "type": "object",
+      "description": "Kind 3: a proposal to pause collections. Nothing has changed yet. A person must confirm.",
+      "properties": {
+        "schema_version": { "const": "1.0" },
+        "kind":           { "const": "pause_proposal" },
+        "run_id":         { "type": "string", "minLength": 1 },
+        "subscriber_ref": { "type": "string", "minLength": 1 },
+        "status":         { "const": "input_required" },
+        "mandate_ref":    { "type": "string", "minLength": 1 },
+        "pause_from":     { "type": "string", "format": "date" },
+        "pause_until":    { "type": "string", "format": "date" },
+        "message":        { "$ref": "#/$defs/message" }
+      },
+      "required": ["schema_version", "kind", "run_id", "subscriber_ref",
+                   "status", "mandate_ref", "pause_from", "pause_until", "message"],
+      "additionalProperties": false
+    }
+  }
+}
